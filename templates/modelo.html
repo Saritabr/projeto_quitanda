@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <title>Quitanda do Zé :: Página Home</title>
 </head>
-<body>
+<body class="d-flex flex-column" style="min-height: 100vh;">
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg shadow border-bottom border-opacity-50 border-2" style="background-color: #5B3933;">
         <div class="container">
@@ -40,14 +40,14 @@
         </div>
       </nav>
       <!-------------- Main ------------------->
-      <main>{% block conteudo %} {% endblock %}
+      <main class="flex-fill">{% block conteudo %} {% endblock %}
     </main>
     
      <!-- Footer -->
     
-     <footer style="background-color: #5B3933; margin-top: 20px;">
-      <div class="footer-content">
-          <div class="footer-left">
+     <footer style="background-color: #5B3933; margin-top: 20px;" class="container-fluid px-5">
+      <div class="row">
+          <div class="col-12 col-md-6">
               <h3 style="color: #DFCEA4;">Contatos</h3>
               <ul>
                   <li><a href="#">📧 Quitandadozé@gmail.com</a></li>
@@ -55,7 +55,7 @@
                   <li><a href="#">Perguntas Frequentes</a></li>
               </ul>
           </div>
-          <div class="footer-right">
+          <div class="col-12 col-md-6">
               <p style="color: #DFCEA4;">Vamos ser amigos</p>
               <a href="#">Siga-nos nas redes sociais</a>
           </div>
